@@ -7,14 +7,19 @@
 Se trata de una tienda e-commerce donde los usuarios pueden navegar productos, agregarlos al carrito y realizar compras.
 Este repositorio está basado en la plantilla oficial de Google Cloud Platform (GCP), y fue adaptado en el contexto de la actividad integradora académica.
 
-## Arquitectura
+## Arquitectura de Infraestructura
+Actualmente este repositorio se encuentra desplegado en GCP, con GKE Autopilot. Contamos con dos clusters, uno es un cluster compartido para el Test y el Desarrollo (un namespace para cada uno), mientras que el otro cluster es dedicado para Produccion, con su respectivo namespace.
+
+[![Arquitectura 
+infra](/docs/img/MarcohorizontaldeGCP.png)](/docs/img/MarcohorizontaldeGCP.png)
+
+## Arquitectura del Software
 
 **Farmacia Mesaura** está compuesta por 11 microservicios escritos en distintos lenguajes de programación, que se comunican entre sí mediante gRPC.
 
 [![Architecture of
 microservices](/docs/img/architecture-diagram.png)](/docs/img/architecture-diagram.png)
 
-Find **Protocol Buffers Descriptions** at the [`./protos` directory](/protos).
 
 | Servicio                                              | Lenguaje      | Descripcion                                                                                                                       |
 | ---------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,5 +39,5 @@ Find **Protocol Buffers Descriptions** at the [`./protos` directory](/protos).
 
 | Home Page                                                                                                         | Checkout Screen                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [![Screenshot of store homepage](/docs/img/online-boutique-frontend-1.png)](/docs/img/online-boutique-frontend-1.png) | [![Screenshot of checkout screen](/docs/img/online-boutique-frontend-2.png)](/docs/img/online-boutique-frontend-2.png) |
+| [![Caotura Home](/docs/img/frontend-farmacia.png)](/docs/img/frontend-farmacia.png) | [![Captura Carrito](/docs/img/carrito-farmacia.png)](/docs/img/carrito-farmacia.png) |
 
